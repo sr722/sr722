@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .button1 {
+        background-color: yellowgreen;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="#" method="post">
+      <table>
+        <tr>
+          <td>First Name:</td>
+          <td><input type="text" name="first_name" required /></td>
+        </tr>
+        <tr>
+          <td>Username:</td>
+          <td><input type="text" name="last_name" required /></td>
+        </tr>
+
+        <tr>
+          <td>Password:</td>
+          <td><input type="password" name="password" required /></td>
+        </tr>
+        <tr>
+          <td>Re Password:</td>
+          <td><input type="password" name="re_password" required /></td>
+        </tr>
+        <tr>
+          <td>Address:</td>
+          <td><input type="text" name="address" required /></td>
+        </tr>
+
+        <tr>
+          <td>Age:</td>
+          <td><input type="number" name="age" required /></td>
+        </tr>
+        <tr>
+          <th><label for="Country">Gender:</label></th>
+          <td>
+            <select name="Gender" id="Gender">
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td colspan="2">
+            <button class="button button1">Save</button>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
