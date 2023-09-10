@@ -1,0 +1,101 @@
+
+
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-2</title>
+    <style>
+        * {
+            font-size: xx-large;
+        }
+        body {
+            margin: 0rem 3rem;
+            display: flex;
+            height: 100%;
+            align-items: center;
+            justify-content: center;
+            column-gap: 2rem;
+        }
+        .navbar {
+            padding: 10px;
+            border: 1px solid black;
+        }
+        .navitem {
+            transition: all 0.7s ease-in;
+        }
+        .item {
+            cursor: pointer;
+            padding: 15px;
+        }
+        .vertical {
+            width: 25vw;
+            background-color: #abd5e1;
+        }
+        .vertical .item:hover {
+            background-color: orange;
+        }
+
+
+        .horizontal {
+            width: 50vw;
+            display: flex;
+            background-color: #d3d3d3;
+        }
+        .horizontal .item {
+            border-right: 1px blue solid;
+        }
+        .horizontal .item:hover {
+            background-color: #7f7f7f;
+            color: white;
+        }
+    </style>
+</head>
+<body data-new-gr-c-s-check-loaded="14.1123.0" data-gr-ext-installed="">
+    <div class="wrapper">
+        <h5>Vertical Navigation Bar</h5>
+        <div class="navbar">
+            <div class="navitem vertical">
+                <div class="item">Home</div>
+                <div class="item">Java</div>
+                <div class="item">CSS</div>
+                <div class="item">HTML</div>
+                <div class="item">Bootstrap</div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="wrapper">
+        <h5>Horizontal Navigation Bar</h5>
+        <div class="navbar">
+            <div class="navitem horizontal">
+                <div class="item">Home</div>
+                <div class="item">Java</div>
+                <div class="item">HTML</div>
+                <div class="item">CSS</div>
+            </div>
+        </div>
+    </div>
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
+      div.grammarly-desktop-integration {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select:none;
+        user-select:none;
+      }
+
+      div.grammarly-desktop-integration:before {
+        content: attr(data-content);
+      }
+    </style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>
