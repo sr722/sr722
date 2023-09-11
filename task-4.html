@@ -1,59 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CSS TASK 4</title>
+    <title>Task-4</title>
     <style>
-      h1,
-      p {
-        text-align: center;
-      }
-      #mySidenav a {
-        position: absolute;
-        left: -80px;
-        transition: 0.45s;
-        padding: 15px;
-        width: 145px;
-        text-decoration: none;
-        font-size: 20px;
-        color: white;
-        border-radius: 0 5px 5px 0;
+      * {
+        margin: 0;
+        padding: 0;
       }
 
-      #mySidenav a:hover {
-        left: 0;
+      body {
+        margin-top: 2rem;
+        display: flex;
+        justify-content: center; /* Center the content horizontally */
+        align-items: center; /* Center the content vertically */
+        min-height: 100vh; /* Ensure the square box takes up the full viewport height */
       }
 
-      #about {
-        top: 20px;
-        background-color: #04aa6d;
+      .container {
+        display: flex;
+        column-gap: 5rem;
       }
 
-      #blog {
-        top: 80px;
-        background-color: #2196f3;
+      .list {
+        border: 1px solid;
+        padding: 20px;
+        width: 700px;
+        height: 500px;
       }
 
-      #projects {
-        top: 140px;
-        background-color: #f44336;
+      .left {
+        display: flex;
+        flex-direction: column;
+        row-gap: 9px;
       }
 
-      #contact {
-        top: 200px;
-        background-color: #555;
+      .nav-item {
+        width: 75px;
+        height: 75px;
+        border-radius: 0px 5px 5px 0px;
+        cursor: pointer;
+        transition: 0.2s ease-in all;
+      }
+
+      .nav-item:hover {
+        width: 80px;
+        height: 80px;
+      }
+
+      .green {
+        background: #04aa6d;
+      }
+      .blue {
+        background: #2196f3;
+      }
+      .red {
+        background: #f44336;
+      }
+      .black {
+        background: #555555;
       }
     </style>
   </head>
   <body>
-    <h1>Hoverable side nav bar</h1>
-    <p>Hover over the buttons in the left side navigation to open them</p>
-    <div id="mySidenav" class="sidenav">
-      <a href="#" id="about">About</a>
-      <a href="#" id="blog">Blog</a>
-      <a href="#" id="projects">Projects</a>
-      <a href="#" id="contact">Contact</a>
+    <div class="list">
+      <div class="container">
+        <div class="left">
+          <div class="green nav-item"></div>
+          <div class="blue nav-item"></div>
+          <div class="red nav-item"></div>
+          <div class="black nav-item"></div>
+        </div>
+        <div class="right">
+          <h1>Hoverable Sidenav Buttons</h1>
+          <p>
+            Hover over the buttons in the left side navigation to open them.
+          </p>
+        </div>
+      </div>
     </div>
   </body>
 </html>
