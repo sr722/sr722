@@ -1,61 +1,80 @@
 
-
+<!-- saved from url=(0067)https://theguydangerous.github.io/Mern-Ethnus/CSS_Tasks/task_5.html -->
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task-4</title>
+    <title>Task-5</title>
   <style>
-    * {
-        margin: 0;
-        padding: 0;
-    }
     body {
-        margin-top: 2rem;
-        display: flex;
-        column-gap: 5rem;
+      display: grid;
+      place-content: center;
     }
-    .left {
-        display: flex;
-        flex-direction: column;
-        row-gap: 9px;
+
+
+    a {
+        text-decoration: none;
     }
+
+
+    .container {
+        background: #d9db3c;
+        padding: 1rem;
+        border: 1px dashed black;
+        height: 30rem;
+    }
+    .wrapper {
+        display: flex;
+        column-gap: 1rem;
+    }
+
+
     .nav-item {
-        width: 75px;
-        height: 75px;
-        border-radius: 0px 5px 5px 0px;
-        cursor: pointer;
-
-
-        transition: 0.2s ease-in all;
+        min-width: 8rem;
+        padding: 5px;
+        margin-top: 0.5rem;
+        background: white;
+        border-right: 1.4rem solid black;
     }
 
 
-    .nav-item:hover {
-        width: 80px;
-        height: 80px;
+    .content {
+        color: #74096e;
     }
-
-
-    .green { background: #04aa6d;}
-    .blue { background: #2196f3;}
-    .red { background: #f44336;}
-    .black { background: #555555;}
    
-
-
   </style></head>
   
   <body data-new-gr-c-s-check-loaded="14.1123.0" data-gr-ext-installed="">
-    <div class="left">
-      <div class="green nav-item"></div>
-      <div class="blue nav-item"></div>
-      <div class="red nav-item"></div>
-      <div class="black nav-item"></div>
-    </div>
-    <div class="right">
-      <h1>Hoverable Sidenav Buttons</h1>
-      <p>Hover over the buttons in the left side navigation to open them.</p>
+    <div class="container">
+      <div class="wrapper">
+        <div class="nav">
+          <div class="nav-item">
+            <a href="https://theguydangerous.github.io/Mern-Ethnus/CSS_Tasks/task_5.html#home">Home page</a>
+          </div>
+          <div class="nav-item">
+            <a href="https://theguydangerous.github.io/Mern-Ethnus/CSS_Tasks/task_5.html#musings">Musings</a>
+          </div>
+          <div class="nav-item">
+            <a href="https://theguydangerous.github.io/Mern-Ethnus/CSS_Tasks/task_5.html#mytown">My town</a>
+          </div>
+          <div class="nav-item">
+            <a href="https://theguydangerous.github.io/Mern-Ethnus/CSS_Tasks/task_5.html#link">Links</a>
+          </div>
+        </div>
+        <div class="content">
+          <h1>My first styled page</h1>
+          <p>Welcome to my styled page!</p>
+          <p>
+            It lacks images, but at least it has style. And it has links, even
+            if they dont't go anywhere...
+          </p>
+          <p>There should be more her, but I don't know what yet.</p>
+          <hr width="100%" color="#74096e">
+          <p>
+            <em>Made 5 April 2004<br>by myself.</em>
+          </p>
+        </div>
+      </div>
     </div>
   
 </body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
